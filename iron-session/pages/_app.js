@@ -1,7 +1,7 @@
 import { SWRConfig } from "swr";
-import fetchJson from "lib/fetchJson";
+import fetchJson from "@/lib/fetchJson";
 
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
     <SWRConfig
       value={{
@@ -16,4 +16,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+
