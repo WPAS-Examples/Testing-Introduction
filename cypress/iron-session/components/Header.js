@@ -1,8 +1,8 @@
 import Link from "next/link";
-import useUser from "lib/useUser";
+import useUser from"@/lib/useUser";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import fetchJson from "lib/fetchJson";
+import fetchJson from"@/lib/fetchJson";
 
 export default function Header() {
   const { user, mutateUser } = useUser();
@@ -13,13 +13,13 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a>Home</a>
             </Link>
           </li>
           {user?.isLoggedIn === false && (
             <li>
-              <Link href="/login">
+              <Link legacyBehavior href="/login">
                 <a>Login</a>
               </Link>
             </li>
@@ -27,7 +27,7 @@ export default function Header() {
           {user?.isLoggedIn === true && (
             <>
               <li>
-                <Link href="/profile-sg">
+                <Link legacyBehavior href="/profile-sg">
                   <a>
                     <span
                       style={{
@@ -49,7 +49,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/profile-ssr">
+                <Link legacyBehavior href="/profile-ssr">
                   <a>Profile (Server-side Rendering)</a>
                 </Link>
               </li>
