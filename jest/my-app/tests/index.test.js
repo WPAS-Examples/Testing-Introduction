@@ -6,8 +6,8 @@ describe("Home Page", () => {
   test("renders at least one link to https://vercel.com in the first child of 'main' ", () => {
     const {container} = render(<Home />);
 
-    // attempt to fetch the first child element within the "main" element
-    const child = container.querySelector('main *');
+    // attempt to fetch the first child "div" element within the "main" element
+    const child = container.querySelector('main div');
 
     // ensure the the child element exists
     expect(child).toBeTruthy();
