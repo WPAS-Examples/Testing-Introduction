@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
 describe("Home Page", () => {
-  test("renders at least one link to https://vercel.com in the first child of 'main' ", () => {
+  test("renders at least one link to https://vercel.com within the 'main' element", () => {
     const {container} = render(<Home />);
 
     // attempt to fetch the first child "div" element within the "main" element
