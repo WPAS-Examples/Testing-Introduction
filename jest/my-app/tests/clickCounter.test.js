@@ -1,5 +1,4 @@
 import ClickCounter from "../components/clickCounter";
-import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 import { render } from "@testing-library/react";
 
