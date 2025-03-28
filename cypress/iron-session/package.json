@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "iron-session": "^7.0.6",
-    "next": "15.1.7",
+    "next": "^15.2.4",
     "octokit": "^4.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -22,6 +22,6 @@
     "@eslint/eslintrc": "^3",
     "cypress": "^14.2.0",
     "eslint": "^9",
-    "eslint-config-next": "15.1.7"
+    "eslint-config-next": "^15.2.4"
   }
 }
